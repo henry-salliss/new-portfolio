@@ -8,14 +8,24 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header>
       <div class="nav-container">
         <h1 class="logo">
-          <a href="/index.html"
-            >henrysalliss.co.uk <i class="fas fa-file-code"></i
-          ></a>
+          <a href="/index.html">henrysalliss.co.uk</a
+          ><i class="far fa-file-code"></i
+          ><button id="show-nav" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </button>
         </h1>
         <div class="header-divider"></div>
         <nav class="main-nav">
@@ -27,12 +37,52 @@
         </nav>
       </div>
     </header>
-
-    <p>hi</p>
+    <main>
+      <section class="projects">
+        <div class="container">
+          <h1 class="main-header">project page</h1>
+          <div class="description">
+            <h2>JavaScript projects:</h2>
+            <ul class="desc-body">
+              <li>
+                All these projects have been written in Javascript, they are
+                basic representations of what I have learnt recently
+              </li>
+              <li>
+                I cannot take credit for some of the HTML and CSS on some of
+                these projects however all the JavaScript was written by me
+              </li>
+              <li>
+                These projects showcase many different parts of JavaScript
+                spanning from simple DOM manipulation, to using all sorts of
+                different functions, arrays, methods and objects
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="script.js"></script>
     <script src="particles.js"></script>
     <script src="app.js"></script>
+    <script>
+      // configuring the toggle nav button
+
+      toggleNav.addEventListener('click', function () {
+        mainNav.classList.toggle('test-show');
+        headerDivider.classList.toggle('show-divider');
+      });
+
+      // configuring the nav to x button
+      navBtn.addEventListener('click', function () {
+        navBtn.classList.toggle('change');
+      });
+
+      function myFunction(x) {
+        x.classList.toggle('change');
+      }
+    </script>
     <footer></footer>
   </body>
 </html>

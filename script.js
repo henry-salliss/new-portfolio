@@ -7,6 +7,10 @@ const navMenu = document.querySelector('.navigation');
 const landingEl = document.querySelector('.landing-area');
 const xBtn = document.querySelector('#x-button');
 const links = document.querySelector('a');
+const toggleNav = document.querySelector('#show-nav');
+const mainNav = document.querySelector('.main-nav');
+const headerDivider = document.querySelector('.header-divider');
+const navBtn = document.querySelector('.bar1, .bar2, bar3');
 
 // Making explore button work
 
@@ -30,6 +34,3 @@ xBtn.addEventListener('click', function () {
 // links.addEventListener('click', function () {
 //   links.style.color = 'red';
 // });
-
-const date = new Date();
-console.log(date);
