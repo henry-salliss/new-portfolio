@@ -202,10 +202,17 @@ textarea {
   padding: 0;
   margin: 0;
 }
+p{
+  font-family: 'Courier New', Courier, monospace';
+}
+
+li{
+  font-family: 'Courier New', Courier, monospace;
+}
 
 html {
   font-size: 16px;
-  color: #fff;
+  /* color: #fff; */
 }
 
 body {
@@ -261,7 +268,7 @@ nav {
   /* top: 0;
     left: 0; */
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: 100;
   display: flex;
   justify-content: center;
@@ -273,6 +280,8 @@ nav {
 
 .landing-area {
   animation: slideTop ease-in-out 1s;
+  color: #fff;
+  height: 80vh;
   width: 90%;
   font-family: 'Raleway', sans-serif;
   background-color: rgb(73, 73, 71, 0.2);
@@ -306,7 +315,8 @@ nav {
   font-size: 1.5em;
   letter-spacing: 10px;
   margin-top: 20%;
-  padding: 10%;
+  margin-left: 33%;
+  padding: 5%;
   transition: ease-in-out 0.1s;
 }
 
@@ -333,7 +343,7 @@ nav {
   color: rgb(56, 55, 55);
   cursor: pointer;
   font-style: italic;
-  font-size: 2em;
+  font-size: 1.5em;
   list-style: none;
   margin-bottom: 20%;
   padding: 15%;
@@ -362,6 +372,7 @@ nav {
 
 #x-button {
   animation: slideRight 1s ease-in-out;
+  color: #fff;
   background-color: rgba(192, 192, 192, 0.2);
   border: #c0c0c0 1px solid;
   font-size: 0.8em;
@@ -383,6 +394,8 @@ nav {
 
 /************************************ MAIN NAVIGATION STYLES  *************************************/
 
+
+
 .nav-container {
   background-color: rgb(17, 16, 16);
   font-family: 'Raleway', sans-serif;
@@ -393,16 +406,14 @@ nav {
 .logo {
   border-right: solid #fff 2px;
   display: flex;
-  font-size: 2em;
-  justify-content: center;
+  font-size: 1em;
+  justify-content: space-between;
   align-items: center;
   margin: 0;
-  width: 100%;
+  padding: 2%;
 }
 
-i {
-  padding-left: 2%;
-}
+
 
 .header-divider {
   opacity: 0;
@@ -410,18 +421,17 @@ i {
   height: 1px;
   border: 1px solid #f2e3da;
   background-color: #f2e3da;
-  margin-top: 20px;
-  margin-bottom: 20px;
   transition: opacity 600ms;
 }
 
 .main-nav {
   align-items: center;
+  color: #fff;
   opacity: 0;
   flex-direction: row;
   justify-content: center;
   transition: opacity 600ms, visibility 600ms, background-color 600ms,
-    height 600ms;
+    height 600ms; 
   visibility: hidden;
   background-color: rgb(17, 16, 16);
   height: 0;
@@ -431,13 +441,16 @@ i {
 
 #show-nav {
   background-color: rgb(17, 16, 16);
-  margin-left: 50%;
+}
+
+#show-nav:visited:active{
+  border: none;
 }
 .bar1,
 .bar2,
 .bar3 {
-  width: 35px;
-  height: 5px;
+  width: 30px;
+  height: 4px;
   background-color: #c0c0c0;
   margin: 6px 0;
   transition: 0.4s;
@@ -459,11 +472,11 @@ i {
 
 .test-show {
   display: flex;
-  /* animation: heightFade ease-in-out 0.6s; */
+  font-size: 0.8em;
   opacity: 1;
   visibility: visible;
   background-color: black;
-  height: 100px;
+  height: 10%;
 }
 
 .show-divider {
@@ -473,10 +486,8 @@ i {
 .main-nav ul {
   align-items: center;
   display: flex;
-  font-size: 1em;
   justify-content: space-around;
   list-style: none;
-  padding: 3%;
   text-transform: capitalize;
   width: 100%;
 }
@@ -502,7 +513,7 @@ i {
 
 .container {
   display: flex;
-  background-color: #3a3535;
+  background-color: #f1efef;
   flex-direction: column;
   padding-left: 3%;
   padding-right: 3%;
@@ -513,20 +524,57 @@ i {
   justify-content: center;
   font-family: 'Raleway' sans-serif;
   text-transform: capitalize;
-  text-decoration: underline;
+  font-size: 3em;
+
 }
+
+/******************** Description styles *************************/
 
 .description {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-
+  color: #fff;
+  font-size: 1.5em;
   /* text-align: left; */
 }
 
-.description li {
-  padding-bottom: 2%;
+.desc-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.points {
+  align-items: center;
+  background: linear-gradient(-45deg, #111010, #5b5c5c);
+  border-radius: 25px;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  margin-bottom: 5%;
+  padding: 5%;
+  transition: 3s;
+  width: 50%;
+}
+
+.points:hover {
+  /* background: linear-gradient(-45deg, #d3d4d4, #515557, #918a8d, #1a1818); */
+  box-shadow: 0px 20px #222;
+  transition: 2s;
+}
+
+#js-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#js-logo img{
+  height: 500px;
+}
+
 
 /*========================MEDIA QUERY FOR TABLETS AND IPADS=============================================*/
 
@@ -565,10 +613,18 @@ i {
     padding: 1%;
     transition: ease-in-out 0.2s;
   }
+  
+
 }
+
+/**************** styles for desc on projects   *********************/
+
 
 /*========================DESKTOP AND LAPTOP MEDIA QUERY===================================*/
 @media only screen and (min-width: 1200px) {
+
+  
+  
   /* LANDING PAGE DESKTOP STYLES */
   .landing-area {
     padding: 1%;
@@ -576,6 +632,7 @@ i {
   }
   #explore {
     font-size: 1em;
+    
   }
 
   /* NAV STYLES FOR DESKTOP */
@@ -620,7 +677,7 @@ i {
     display: none;
   }
 
-  .main-nav {
+  /* .main-nav {
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -651,13 +708,13 @@ i {
   .main-nav a {
     padding: 2%;
     transition: ease-in-out 0.2s;
-  }
+  } */
 
-  .main-nav a:hover {
+   .main-nav a:hover {
     /* background-color: #c0c0c0; */
     box-shadow: 0px 1px #c0c0c0;
     cursor: pointer;
-  }
+  } 
 
   /* HIDING THE SHOW NAV BUTTON AND DISPLAYING THE NAV FOR DESKTOP */
 

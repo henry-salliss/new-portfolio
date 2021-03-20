@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>Portfolio Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -19,8 +20,9 @@
     <header>
       <div class="nav-container">
         <h1 class="logo">
-          <a href="/index.html">henrysalliss.co.uk</a
-          ><i class="far fa-file-code"></i
+          <a href="/index.html"
+            >henrysalliss.co.uk
+            <i style="color: #fff" class="far fa-file-code"></i></a
           ><button id="show-nav" onclick="myFunction(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
@@ -40,24 +42,27 @@
     <main>
       <section class="projects">
         <div class="container">
-          <h1 class="main-header">project page</h1>
+          <h1 class="main-header">JavaScript Projects</h1>
           <div class="description">
-            <h2>JavaScript projects:</h2>
             <ul class="desc-body">
-              <li>
+              <li class="points">
                 All these projects have been written in Javascript, they are
                 basic representations of what I have learnt recently
               </li>
-              <li>
+              <li class="points">
                 I cannot take credit for some of the HTML and CSS on some of
                 these projects however all the JavaScript was written by me
               </li>
-              <li>
+              <li class="points">
                 These projects showcase many different parts of JavaScript
                 spanning from simple DOM manipulation, to using all sorts of
                 different functions, arrays, methods and objects
               </li>
+              <li class="points">Click on the image below to see my work</li>
             </ul>
+          </div>
+          <div id="js-logo">
+            <img src="img/js-logo.png" alt="JavaScript logo" />
           </div>
         </div>
       </section>
