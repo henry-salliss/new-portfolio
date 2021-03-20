@@ -524,7 +524,7 @@ nav {
   justify-content: center;
   font-family: 'Raleway' sans-serif;
   text-transform: capitalize;
-  font-size: 3em;
+  font-size: 1.5em;
 
 }
 
@@ -535,7 +535,7 @@ nav {
   justify-content: flex-start;
   flex-direction: column;
   color: #fff;
-  font-size: 1.5em;
+  font-size: 0.8em;
   /* text-align: left; */
 }
 
@@ -556,7 +556,6 @@ nav {
   margin-bottom: 5%;
   padding: 5%;
   transition: 3s;
-  width: 50%;
 }
 
 .points:hover {
