@@ -40,6 +40,7 @@
             <a href="projects.html"><li>projects</li></a>
             <a><li>about</li></a>
             <a><li>contact</li></a>
+            <a><li id="toggle-mode">Light mode</li></a>
           </ul>
         </nav>
       </div>
@@ -73,7 +74,7 @@
           </div>
         </div>
         <section class="htmlproj">
-          <div class="container">
+          <div class="container html-cont">
             <h1 class="main-header html-header"><span>HTML & CSS</span> projects</h1>
             <div class="html-desc">
               <ul class="html-desc-body">
@@ -118,7 +119,32 @@
       function myFunction(x) {
         x.classList.toggle('change');
       }
+
+      lightDarkBtn.addEventListener('click', function(){
+        container.classList.toggle('light-dark-mode')
+        htmlContainer.classList.toggle('light-dark-mode')
+        if(lightDarkBtn.innerHTML === 'Light mode'){
+          lightDarkBtn.innerHTML = 'Dark mode';
+        }else{
+          lightDarkBtn.innerHTML = 'Light mode'
+        }
+           })
     </script>
     <footer></footer>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

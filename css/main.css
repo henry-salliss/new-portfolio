@@ -473,10 +473,10 @@ nav {
 
 .test-show {
   display: flex;
-  font-size: 0.8em;
+  font-size: 0.6em;
   opacity: 1;
   visibility: visible;
-  background-color: black;
+  background-color: rgb(17, 16, 16);
   height: 10%;
 }
 
@@ -505,9 +505,15 @@ nav {
 }
 
 .main-nav a:hover {
-  /* background-color: #c0c0c0; */
   box-shadow: 0px 1px #c0c0c0;
   cursor: pointer;
+}
+
+
+.light-dark-mode{
+  color: #000;
+  background-color: #fff;
+  background: #fff;
 }
 
 /***************** PROJECTS STYLES **********************/
@@ -515,10 +521,15 @@ nav {
 .container {
   border-top: 1px white solid;
   display: flex;
-  background-color: rgb(22, 14, 14);
+  background-color: rgb(17, 16, 16);
   flex-direction: column;
   padding-left: 3%;
   padding-right: 3%;
+}
+.light-dark-mode{
+  color: #000;
+  background-color: #fff;
+  border-top: 1px black solid;
 }
 
 .main-header {
@@ -571,15 +582,24 @@ nav {
   justify-content: center;
   align-items: center;
   transform: scale(0.6);
-  
+  transition: 300ms;
 }
 .lang-logo img{
   box-shadow: 10px 10px rgb(175, 173, 173);
 }
 
+.lang-logo img:hover{
+  transform: rotate(0);
+  box-shadow: 0 0 0;
+}
+
 /************************ HTML project part styles  *******************/
 .html-header{
   font-size: 0.9em;
+}
+
+.html-header span{
+  color: blue;
 }
 .html-points{
   background: linear-gradient(-45deg, #111010, #5b5c5c);
@@ -593,9 +613,8 @@ nav {
   background: linear-gradient(-45deg, #d3d4d4, #515557, #918a8d, #1a1818);
 }
 
-#css-logo{
-  /* box-shadow: -10px -10px rgb(175,173,173, green, blue); */
-}
+
+
 
 
 /*========================MEDIA QUERY FOR TABLETS AND IPADS=============================================*/
@@ -635,7 +654,9 @@ nav {
     padding: 1%;
     transition: ease-in-out 0.2s;
   }
-  
+  .test-show {
+    font-size: 0.8em;
+  }
   /****************** project page styles ipad   ***********************/
 
   .container {
@@ -667,6 +688,32 @@ nav {
 .lang-logo{
   transform: scale(0.7);
 }
+
+.html-desc{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 0.5em;
+  color: #fff;
+}
+
+.html-desc-body{
+  flex-direction: row;
+  flex-flow: wrap;
+  width: 50%;
+  
+}
+
+.html-points{
+  background: linear-gradient(-45deg, #111010, #5b5c5c);
+  border-radius: 25px;
+  font-size: 0.8em;
+  padding: 5%;
+  margin-bottom: 1%;
+  margin-right: 5%;
+  
+}
+
 }
 
 
@@ -796,6 +843,7 @@ display: flex;
 justify-content: flex-end;
 align-items: center;
 flex-flow: wrap;
+position: relative;
 }
 
 .html-desc{
@@ -803,7 +851,7 @@ flex-flow: wrap;
   flex-flow: wrap;
   justify-content: flex-end;
   align-items: center;
-  /* width: 50%; */
+  font-size: 0.8em;
 }
 
 .html-desc-body{
@@ -811,6 +859,8 @@ flex-flow: wrap;
   justify-content: center;
   flex-flow: wrap;
   width: 50%;
+  margin: 10% 0 10% 0;
+  
 }
 
 .html-points{
@@ -828,8 +878,10 @@ flex-flow: wrap;
 }
 
 #css-logo{
-  top: 145%;
-  left: 20%;
+  position: absolute;
+  top: 43%;
+  left: 22%;
+  transform: scale(1);
 }
 
 }

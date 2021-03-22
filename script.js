@@ -11,6 +11,9 @@ const toggleNav = document.querySelector('#show-nav');
 const mainNav = document.querySelector('.main-nav');
 const headerDivider = document.querySelector('.header-divider');
 const navBtn = document.querySelector('.bar1, .bar2, bar3');
+const lightDarkBtn = document.getElementById('toggle-mode');
+const container = document.querySelector('.container');
+const htmlContainer = document.querySelector('.html-cont');
 
 // Making explore button work
 
