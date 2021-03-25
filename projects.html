@@ -15,11 +15,13 @@
       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -121,8 +123,10 @@
       }
 
       lightDarkBtn.addEventListener('click', function(){
+
         container.classList.toggle('light-dark-mode')
         htmlContainer.classList.toggle('light-dark-mode')
+        htmlContainer.style.color = 'white';
         if(lightDarkBtn.innerHTML === 'Light mode'){
           lightDarkBtn.innerHTML = 'Dark mode';
         }else{
@@ -130,7 +134,25 @@
         }
            })
     </script>
-    <footer></footer>
+    <footer>
+      <div class="footer-socials">
+        <p>Socials</p>
+      <p><a href="https://github.com/henry-salliss/" target="_blank" id="github"><img src="/img/github-square.svg" alt=""></a>
+        <p><a href="https://www.linkedin.com/in/henry-salliss-098b241a6/"></a><img src="/img/linkedin.svg" alt=""></p>
+        </p>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Henry Salliss 2020</p>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <a href="projects.html"><li>projects</li></a>
+            <a><li>about</li></a>
+            <a><li>contact</li></a>
+            <a><li id="toggle-mode">Light mode</li></a>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
 
