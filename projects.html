@@ -102,6 +102,27 @@
       
     </main>
 
+    
+    
+    <footer class="footer-el">
+      <div class="footer-socials">
+        <p>Socials</p>
+      <p><a href="https://github.com/henry-salliss/" target="_blank" id="github"><img src="/img/github-square.svg" alt=""></a>
+        <p><a href="https://www.linkedin.com/in/henry-salliss-098b241a6/"></a><img src="/img/linkedin.svg" alt=""></p>
+        </p>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Henry Salliss 2020</p>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <a href="projects.html"><li>projects</li></a>
+            <a><li>about</li></a>
+            <a><li>contact</li></a>
+            <a><li id="toggle-footer-mode">Light mode</li></a>
+        </ul>
+      </div>
+    </footer>
     <script src="script.js"></script>
     <script src="particles.js"></script>
     <script src="app.js"></script>
@@ -122,8 +143,7 @@
         x.classList.toggle('change');
       }
 
-      lightDarkBtn.addEventListener('click', function(){
-
+      const dayNightMode = function(){
         container.classList.toggle('light-dark-mode')
         htmlContainer.classList.toggle('light-dark-mode')
         htmlContainer.style.color = 'white';
@@ -132,27 +152,18 @@
         }else{
           lightDarkBtn.innerHTML = 'Light mode'
         }
-           })
+        if(footerLightDark.innerHTML === 'Light mode'){
+          footerLightDark.innerHTML = 'Dark mode';
+        }else{
+          footerLightDark.innerHTML = 'Light mode'
+      }};
+
+      lightDarkBtn.addEventListener('click', dayNightMode);
+
+      footerLightDark.addEventListener('click', dayNightMode);
+
+      
     </script>
-    <footer>
-      <div class="footer-socials">
-        <p>Socials</p>
-      <p><a href="https://github.com/henry-salliss/" target="_blank" id="github"><img src="/img/github-square.svg" alt=""></a>
-        <p><a href="https://www.linkedin.com/in/henry-salliss-098b241a6/"></a><img src="/img/linkedin.svg" alt=""></p>
-        </p>
-      </div>
-      <div class="copyright">
-        <p>Copyright © Henry Salliss 2020</p>
-      </div>
-      <div class="footer-nav">
-        <ul>
-          <a href="projects.html"><li>projects</li></a>
-            <a><li>about</li></a>
-            <a><li>contact</li></a>
-            <a><li id="toggle-mode">Light mode</li></a>
-        </ul>
-      </div>
-    </footer>
   </body>
 </html>
 

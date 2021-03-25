@@ -12,8 +12,10 @@ const mainNav = document.querySelector('.main-nav');
 const headerDivider = document.querySelector('.header-divider');
 const navBtn = document.querySelector('.bar1, .bar2, bar3');
 const lightDarkBtn = document.getElementById('toggle-mode');
+const footerLightDark = document.querySelector('#toggle-footer-mode');
 const container = document.querySelector('.container');
 const htmlContainer = document.querySelector('.html-cont');
+const footerEl = document.querySelector('.footer-el');
 
 // Making explore button work
 
