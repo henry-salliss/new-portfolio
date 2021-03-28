@@ -17,7 +17,9 @@ const container = document.querySelector('.container');
 const htmlContainer = document.querySelector('.html-cont');
 const footerEl = document.querySelector('.footer-el');
 const headingEls = document.querySelector('.html-header');
-
+const exampleCont = document.querySelector('.example-container');
+const examplesForward = document.querySelectorAll('.example-forwards');
+const exampleHeadings = document.querySelector('.examples-header');
 // Making explore button work
 
 exploreBtn.addEventListener('click', function () {
