@@ -333,9 +333,10 @@ nav {
   cursor: pointer;
   font-size: 1.5em;
   letter-spacing: 10px;
-  margin-top: 20%;
-  margin-left: 33%;
   padding: 5%;
+  position: absolute;
+  top: 33%;
+  left: 37%;
   transition: ease-in-out 0.1s;
 }
 
@@ -378,6 +379,8 @@ nav {
 .show-nav {
   display: flex;
   flex-direction: column;
+  position: absolute;
+  top: 10%;
   text-align: center;
   width: 33%;
   z-index: 200;
@@ -461,10 +464,11 @@ nav {
 
 #show-nav {
   background-color: rgb(17, 16, 16);
+  cursor: pointer;
 }
 
-#show-nav:visited:active{
-  border: none;
+#show-nav:focus{
+  outline: 0;
 }
 .bar1,
 .bar2,
@@ -477,8 +481,8 @@ nav {
 }
 
 .change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+  transform: rotate(-45deg) translate(-8px, 6px);
 }
 
 .change .bar2 {
@@ -533,6 +537,10 @@ nav {
   color: #000;
   background-color: #fff;
   background: #fff;
+}
+
+.heading-light-dark{
+  color: #000;
 }
 
 /***************** PROJECTS STYLES **********************/
@@ -616,6 +624,7 @@ nav {
 /************************ HTML project part styles  *******************/
 .html-header{
   font-size: 0.9em;
+  transition: 300ms;
 }
 
 .html-header span{
@@ -647,11 +656,12 @@ footer img{
   background-color: #fff;
   transition: 300ms;
   padding-bottom: 3%;
-  transform: scale(0.8);
+  /* transform: scale(0.8); */
 }
 
 footer img:hover{
-  transform: scale(1.1);
+  /* box-shadow: 10px 5px rgba(rgba(187, 184, 184, 0.5), green, blue, alpha); */
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .footer-socials{
   color: #000;
@@ -678,6 +688,103 @@ footer img:hover{
 }
 
 
+
+
+
+/******************  js work page styles  *********************/
+
+.example-forwards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(17, 16, 16);
+  padding: 5%;
+  max-width: 100%;
+  text-align: center;
+  font-size: 0.5em;
+}
+
+.examples-header{
+  border-top: 1px #c0c0c0 solid;
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
+  font-family: 'Sonsie One', cursive;
+  background-color: rgb(17, 16, 16);
+  margin: 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.examples-header span{
+  color: red;
+  padding-right: 3%;
+}
+
+.brief{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.project-link{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.project-link a{
+  transform: scale(0.5);
+}
+
+.project-link img{
+  border-radius: 0.25em;
+  transform: rotateX(10deg) rotateY(-18deg) rotateZ(3deg);
+  transition: 300ms;
+  box-shadow: 2px 10px 30px rgba(247, 246, 246, 0.25);
+}
+
+.project-link img:hover{
+  transform: rotate(0);
+  box-shadow: 0 0 0;
+}
+
+/* reverse examples */
+
+.example-reverse{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(17, 16, 16);
+  padding: 5%;
+  max-width: 100%;
+  text-align: center;
+  font-size: 0.5em;
+}
+
+.project-link-reverse{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.project-link-reverse a{
+  transform: scale(0.5);
+}
+
+.project-link-reverse img{
+  border-radius: 0.25em;
+  transform: rotateX(10deg) rotateY(-18deg) rotateZ(3deg);
+  transition: 300ms;
+  box-shadow: 2px 10px 30px rgba(247, 246, 246, 0.25);
+}
+
+.project-link-reverse img:hover{
+  transform: rotate(0);
+  box-shadow: 0 0 0;
+}
+
+
 /*========================MEDIA QUERY FOR TABLETS AND IPADS=============================================*/
 
 @media only screen and (min-width: 768px) {
@@ -692,6 +799,12 @@ footer img:hover{
     margin-bottom: 20%;
     padding: 10%;
   }
+/* 
+  #explore{
+    padding: 2%;
+    top: 40%;
+    left: 40%;
+  } */
 
   /* main nav for ipads */
 
@@ -700,7 +813,7 @@ footer img:hover{
   }
 
   .logo {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   .header-divider {
@@ -785,9 +898,6 @@ footer img{
   width: 50%;
 }
 
-footer img:hover{
-  transform: scale(1.1);
-}
 .footer-socials{
   color: #000;
   display: flex;
@@ -802,6 +912,21 @@ footer img:hover{
 }
 .footer-nav{
   margin-right: 8%;
+}
+
+/**************** examples styles ipad  ***************************/
+.example-forwards{
+  padding: 5%;
+  font-size: 0.8em;
+}
+
+.examples-header{
+  font-size: 1.5em;
+}
+
+
+.project-link a{
+  transform: scale(0.8);
 }
 }
 
@@ -819,6 +944,9 @@ footer img:hover{
   }
   #explore {
     font-size: 1em;
+    top: 57%;
+    left: 43%;
+    padding: 2%;
     
   }
 
@@ -994,6 +1122,27 @@ footer img{
 .footer-nav li{
   padding: 3% 0 3%;
 }
+
+
+/******************* examples styles for desktop  ***************/
+
+.example-forwards{
+  padding: 5%;
+  font-size: 1em;
+}
+
+.examples-header{
+  font-size: 2em;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+
+
+.project-link a{
+  transform: scale(1);
+}
+
 
 }
 

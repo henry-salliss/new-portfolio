@@ -16,6 +16,7 @@ const footerLightDark = document.querySelector('#toggle-footer-mode');
 const container = document.querySelector('.container');
 const htmlContainer = document.querySelector('.html-cont');
 const footerEl = document.querySelector('.footer-el');
+const headingEls = document.querySelector('.html-header');
 
 // Making explore button work
 
