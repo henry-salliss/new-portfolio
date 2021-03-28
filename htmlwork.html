@@ -47,59 +47,38 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section class="projects">
-        <div class="container">
-          <h1 class="main-header"><span>JavaScript</span> projects</h1>
-          <div class="description">
-            <ul class="desc-body">
-              <li class="points">
-                All these projects have been written in Javascript, they are
-                basic representations of what I have learnt recently
-              </li>
-              <li class="points">
-                I cannot take credit for some of the HTML and CSS on some of
-                these projects however all the JavaScript was written by me
-              </li>
-              <li class="points">
-                These projects showcase many different parts of JavaScript
-                spanning from simple DOM manipulation, to using all sorts of
-                different functions, arrays, methods and objects
-              </li>
-              <li class="points">Click on the image to see my work</li>
-            </ul>
-          </div>
-          <div class="lang-logo">
-            <a href="jswork.html"
-              ><img src="img/js-logo-resized.jpg" alt="JavaScript logo"
-            /></a>
-          </div>
-        </div>
-        <section class="htmlproj">
-          <div class="container html-cont">
-            <h1 class="main-header html-header"><span>HTML & CSS</span> projects</h1>
-            <div class="html-desc">
-              <ul class="html-desc-body">
-                <li class="html-points">
-                  All these projects are basic HTML and CSS used to make responsive websites on all different devices
-                </li>
-                <li class="html-points">
-                  Mostly using Flexbox to position elements but also plan on expanding to CSS grid to help with layout of HTML elements
-                </li>
-                <li class="html-points">
-                  Click on the image to see my work
-                </li>
-              </ul>
+    <main class="example-container">
+        <h1 class="examples-header"><span>Holiday</span> brouchure</h1>
+        <section class="example-forwards">
+            
+            <div class="brief">
+                <p>Fully responsive webisite that has multiple pages that look presenstable on mobile, tablet and desktop. Good template for future projects.</p>
             </div>
-            <div class="lang-logo" id="css-logo">
-              <a href="htmlwork.html"
-                ><img src="img/cssimg.png" alt="CSS logo"
-              /></a>
+            <div class="project-link">
+                <a href="/unplugged/index.html"><img src="/img/unplugged55.jpg" alt="preview image of unplugged website"></a>
+                
             </div>
-            </div>
-          </div>
         </section>
-      
+        <h1 class="examples-header"><span style="color: yellow;">Menu</span> brouchure</h1>
+        <section class="example-reverse">
+            
+            <div class="project-link-reverse">
+                <a href="/brochure-project/index.html"><img src="/img/rogue-pickings.jpg "alt="brochure website preview"></a>
+            </div>
+            <div class="brief">
+                <p>Small but simple presentation of HTML and CSS skills to make brochure website of small company. Viewable on all devices thanks to use of media queries.</p>
+            </div>
+        </section>
+        <h1 class="examples-header"><span style="color: aqua;">Portfolio</span> project</h1>
+        <section class="example-forwards">
+            
+            <div class="brief">
+                <p>A previous version of a Portfolio website that just incorporated simple HTML and CSS as one page site to display skills and necessary information, demonstration of portfolio building.</p>
+            </div>
+            <div class="project-link">
+                <a href="/portfolio-website/index.html"><img src="/img/port-project.jpg" alt="preview image of portfolio-website"></a>
+                
+            </div>
     </main>
 
     
@@ -108,7 +87,7 @@
       <div class="footer-socials">
         <p>Socials</p>
       <p><a href="https://github.com/henry-salliss/" target="_blank" id="github"><img src="/img/github-square.svg" alt=""></a>
-        <p><a href="https://www.linkedin.com/in/henry-salliss-098b241a6/" target="_blank"><img src="/img/linkedin.svg" alt="linkedIn logo"></a></p>
+        <p><a href="https://www.linkedin.com/in/henry-salliss-098b241a6/"><img src="/img/linkedin.svg" alt="linkedIn logo"></a></p>
         </p>
       </div>
       <div class="copyright">
@@ -127,6 +106,7 @@
     <script src="particles.js"></script>
     <script src="app.js"></script>
     <script>
+        console.log(examplesForward);
       // configuring the toggle nav button
 
       toggleNav.addEventListener('click', function () {
@@ -144,10 +124,11 @@
       }
 
       const dayNightMode = function(){
-        container.classList.toggle('light-dark-mode')
-        htmlContainer.classList.toggle('light-dark-mode')
-        htmlContainer.style.color = 'white';
-        headingEls.classList.toggle('heading-light-dark')
+        // changing styles
+        exampleHeadings.classList.toggle('heading-light-dark')
+        exampleCont.classList.toggle('light-dark-mode')
+
+        // changing text on button
         if(lightDarkBtn.innerHTML === 'Light mode'){
           lightDarkBtn.innerHTML = 'Dark mode';
         }else{
