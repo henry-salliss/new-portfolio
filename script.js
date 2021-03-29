@@ -20,6 +20,8 @@ const headingEls = document.querySelector('.html-header');
 const exampleCont = document.querySelector('.example-container');
 const examplesForward = document.querySelectorAll('.example-forwards');
 const exampleHeadings = document.querySelector('.examples-header');
+const aboutCont = document.querySelector('.about-container');
+const aboutHeadings = document.querySelector('.about-header');
 // Making explore button work
 
 exploreBtn.addEventListener('click', function () {
