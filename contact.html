@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>JavaScript Work</title>
+    <title>HTML and CSS projects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/normalize.css" />
@@ -47,60 +47,23 @@
         </nav>
       </div>
     </header>
-    <main class="example-container">
-        <h1 class="examples-header"><span>Number</span> Game</h1>
-        <section class="example-forwards">
-            
-            <div class="brief">
-                <p>A number game created with JavaScript logic that supports two players taking turns on rolling a dice which stores a score which increases on every roll except when a 1 is rolled, the other player can then play. If a player chooses to hold their current score will be added to their main score. First to 100 wins.</p>
-            </div>
-            <div class="project-link">
-                <a href="/first-to-hundred/index.html"><img src="/img/number-game.jpg" alt="preview image of number game"></a>
-                
-            </div>
-        </section>
-        <h1 class="examples-header"><span style="color: yellow;">Guess</span> the number</h1>
-        <section class="example-reverse">
-            
-            <div class="project-link-reverse">
-                <a href="/random-number/index.html"><img src="/img/random-num-ss.jpg" alt="random number game image"></a>
-            </div>
-            <div class="brief">
-                <p>Simple JavaScript game where a random number is generated and user has to guess, appropriate hints displayed depending on user input.</p>
-            </div>
-        </section>
-        <h1 class="examples-header"><span style="color: aqua;">Election</span> map</h1>
-        <section class="example-forwards">
-            
-            <div class="brief">
-                <p>JavaScript map that is best viewed on desktop, when mouse hovers over states the winner of the election in that state is revealed, vote count changes dynamically in bottom right.</p>
-            </div>
-            <div class="project-link">
-                <a href="/election-map/index.html"><img src="/img/election-map-ss.png" alt="election map preview image"></a>
-                
-            </div>
-        </section>
-        <h1 class="examples-header"><span style="color: blueviolet;">Magic</span> 8 ball</h1>
-        <section class="example-reverse">
-            
-            <div class="project-link-reverse">
-                <a href="/8ball/index.html"><img src="/img/8ballmark2.jpg" alt="8 ball preview image"></a>
-            </div>
-            <div class="brief">
-                <p>Magic 8 ball which uses JavaScript to respond to user input to display answer to a yes or no question thought of by the user.</p>
-            </div>
-        </section>
-        <h1 class="examples-header"><span style="color: coral;">JavaScript</span> clock</h1>
-        <section class="example-forwards">
-            
-            <div class="brief">
-                <p>Clock made using JavaScript that displays different messages based on the time of day, the drop down boxes for the various events also display other images if set time is equal to the current time.</p>
-            </div>
-            <div class="project-link">
-                <a href="/js-clock/index.html"><img src="/img/js-clock-pic (2).jpg" alt="js clock preview image"></a>
-                
-            </div>
-        </section>
+    <main>
+      <section class="form-container">
+      <h1 class="contact-header">Contact me</h1>
+      <form id="contact-form" action="mailto:henrydeveloper1@gmail.com">
+        
+        <label for="fullName">Name:</label>
+        <input type="text" id="fullName" name="name" placeholder="Your name here..." required>
+        <br>
+        <label for="userEmail">Email:</label>
+        <input type="email" id="userEmail" name="email" placeholder="Your email here..." required>
+        <br>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject...">
+        <br>
+        <input type="submit" id= 'submit' value="Create email" required>
+      </form>
+    </section>
     </main>
 
     
@@ -170,18 +133,3 @@
     </script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

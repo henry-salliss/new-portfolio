@@ -15,6 +15,7 @@ html {
   color: #fff;
   font-size: 1em;
   line-height: 1.4;
+  scroll-behavior: smooth;
 }
 
 /*
@@ -893,7 +894,40 @@ footer img:hover{
   text-align: center;
   font-size: 2em;
 }
+/*//////////////// contact page styles  /////////////////////*/
 
+.form-container{
+  background-color: rgb(17, 16, 16);
+}
+
+.contact-header{
+  border-top: 1px #c0c0c0 solid;
+  font-size: 1em;
+  font-family: 'Sonsie One', cursive;
+  margin: 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+#contact-form{
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  font-size: 0.6em;
+}
+
+#subject{
+ margin-top: 2%; 
+}
+
+#userEmail{
+  margin-top: 2%;
+}
+
+#submit{
+  width: 27%;
+  margin-left: 33%;
+}
 
 /*========================MEDIA QUERY FOR TABLETS AND IPADS=============================================*/
 
@@ -997,6 +1031,8 @@ footer img:hover{
   margin-right: 5%;
   
 }
+
+
 
 /* *************footer styles for ipad / tablets **************** */
 footer{
@@ -1122,6 +1158,37 @@ footer img{
   text-align: center;
   font-size: 2em;
 }
+
+
+
+/* contact page styles ipad and tablet */
+
+.contact-header{
+  padding-top: 3%;
+  padding-bottom: 1%;
+  font-size: 1.2em;
+}
+#contact-form{
+  font-size: 0.8em;
+  padding-left: 35%;
+}
+
+#fullName{
+  width: 50%;
+}
+
+#subject{
+ width: 50%;
+}
+
+#userEmail{
+  width: 50%;
+}
+
+#submit{
+  margin-left: 10%;
+}
+
 }
 
 
@@ -1396,6 +1463,31 @@ footer img{
   font-size: 3em;
   padding-bottom: 2%;
 }
+
+/* contact page styles desktop */
+
+
+
+.contact-header{
+  font-size: 2em;
+  text-align: center;
+}
+#contact-form{
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+}
+
+#subject{
+}
+
+#userEmail{
+}
+
+#submit{
+  width: 27%;
+}
+
 }
 
 /* ==========================================================================
