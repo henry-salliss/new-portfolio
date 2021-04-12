@@ -300,9 +300,10 @@ nav {
 .landing-area {
   animation: slideTop ease-in-out 1s;
   color: #fff;
-  /* height: 80vh; */
+  height: 45vh;
   width: 90%;
   font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
   background-color: rgb(73, 73, 71, 0.2);
   padding: 2%;
   border-radius: 25px;
@@ -336,7 +337,9 @@ nav {
   font-size: 1.5em;
   letter-spacing: 10px;
   padding: 5%;
-  margin-left: 38%;
+  margin-left: 35%;
+  transition: 300ms;
+  margin-top: 2%;
   /* position: absolute;
   top: 33%;
   left: 37%; */
@@ -365,7 +368,7 @@ nav {
   color: rgb(56, 55, 55);
   cursor: pointer;
   font-style: italic;
-  font-size: 1.5em;
+  font-size: 2.3em;
   list-style: none;
   margin-bottom: 20%;
   padding: 15%;
@@ -382,7 +385,7 @@ nav {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 10%;
+  top: 27%;
   text-align: center;
   width: 33%;
   z-index: 200;
@@ -986,7 +989,6 @@ input{
     width: 80%;
   }
   .navigation li {
-    font-size: 1.5em;
     list-style: none;
     margin-bottom: 20%;
     padding: 10%;
@@ -1258,6 +1260,7 @@ footer img{
   .landing-area {
     padding: 1%;
     width: 50%;
+    font-size: 1em;
   }
   #explore {
     font-size: 1em;
@@ -1316,8 +1319,9 @@ footer img{
 
   /* HIDING THE SHOW NAV BUTTON AND DISPLAYING THE NAV FOR DESKTOP */
 
-  #show-nav {
-    display: none;
+  .show-nav {
+    /* display: none; */
+    top: 5%;
   }
 
   /***********************project main styles for desktop  ***********/
