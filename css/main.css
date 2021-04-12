@@ -242,6 +242,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 /* button styles */
@@ -906,7 +907,7 @@ footer img:hover{
   font-size: 1em;
   font-family: 'Sonsie One', cursive;
   margin: 0;
-  padding-top: 5%;
+  padding-top: 18%;
   padding-bottom: 5%;
   text-align: center;
 }
@@ -915,6 +916,7 @@ footer img:hover{
   flex-direction: column;
   padding: 5%;
   font-size: 0.6em;
+  margin-bottom: 15%;
 }
 
 #subject{
@@ -930,6 +932,7 @@ footer img:hover{
   margin-left: 33%;
   transition: 100ms ease-in-out;
   cursor: pointer;
+  background-color: #fff;
 }
 
 #submit:hover{
@@ -955,6 +958,8 @@ input{
 .icons{
   display: flex;
   justify-content: space-around;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 .icons i{
@@ -1525,6 +1530,7 @@ footer img{
   display: flex;
   flex-direction: column;
   font-size: 1em;
+  margin: 0;
 }
 
 
@@ -1536,6 +1542,7 @@ footer img{
 .icons{
   padding-top: 5%;
   justify-content: center;
+  margin: 0;
 }
 
 .social-link{
