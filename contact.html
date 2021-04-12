@@ -15,7 +15,7 @@
       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap"
@@ -41,15 +41,14 @@
           <ul>
             <a href="projects.html"><li>projects</li></a>
             <a href="about.html"><li>about</li></a>
-            <!-- <a><li>contact</li></a> -->
             <a><li id="toggle-mode">Light mode</li></a>
           </ul>
         </nav>
       </div>
     </header>
-    <main>
+    <main class="contact-container">
       <section class="form-container">
-      <h1 class="contact-header">Contact me</h1>
+      <h1 class="contact-header"><span style="color:goldenrod;">Contact</span> me</h1>
       <form id="contact-form" action="mailto:henrydeveloper1@gmail.com">
         
         <label for="fullName">Name:</label>
@@ -59,10 +58,20 @@
         <input type="email" id="userEmail" name="email" placeholder="Your email here..." required>
         <br>
         <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" placeholder="Subject...">
+        <input type="text" id="subject" name="subject" placeholder="Subject..." required> 
         <br>
         <input type="submit" id= 'submit' value="Create email" required>
       </form>
+    </section>
+
+    <section class="social-media">
+      <h2 class="contact-header"><span style="color: teal; margin-right :1% ;">Find</span> me on...</h2>
+      <div class="icons">
+        <a class="social-link" href="https://www.linkedin.com/in/henry-salliss-098b241a6/"><i class="fab fa-linkedin-in" id="linkedIn"></i></a>
+      <a class="social-link" href="https://github.com/henry-salliss/"><i class="fab fa-github" id="github"></i></a>
+      </div>
+      
+
     </section>
     </main>
 
@@ -76,13 +85,12 @@
         </p>
       </div>
       <div class="copyright">
-        <p>Copyright © Henry Salliss 2020</p>
+        <p>Copyright © Henry Salliss 2021</p>
       </div>
       <div class="footer-nav">
         <ul>
           <a href="projects.html"><li>projects</li></a>
             <a href="about.html"><li>about</li></a>
-            <!-- <a><li>contact</li></a> -->
             <a><li id="toggle-footer-mode">Light mode</li></a>
         </ul>
       </div>
@@ -110,8 +118,10 @@
 
       const dayNightMode = function(){
         // changing styles
-        exampleHeadings.classList.toggle('heading-light-dark')
-        exampleCont.classList.toggle('light-dark-mode')
+        contactHeaders.classList.toggle('heading-light-dark')
+        contactCont.classList.toggle('light-dark-mode');
+        linkedInIcon.classList.toggle('social-light-dark');
+        githubIcon.classList.toggle('social-light-dark');
 
         // changing text on button
         if(lightDarkBtn.innerHTML === 'Light mode'){

@@ -299,7 +299,7 @@ nav {
 .landing-area {
   animation: slideTop ease-in-out 1s;
   color: #fff;
-  height: 80vh;
+  /* height: 80vh; */
   width: 90%;
   font-family: 'Raleway', sans-serif;
   background-color: rgb(73, 73, 71, 0.2);
@@ -308,7 +308,7 @@ nav {
 }
 
 .switch-word::before {
-  content: 'HTML';
+  content: 'JavaScript';
   animation: word ease-in-out infinite 8s;
 }
 
@@ -597,7 +597,7 @@ nav {
 
 .points {
   align-items: center;
-  background: linear-gradient(-45deg, #111010, #5b5c5c);
+  background: linear-gradient(-45deg, #b0d6f0, #171d1d);
   border-radius: 25px;
   display: flex;
   list-style-type: none;
@@ -636,7 +636,7 @@ nav {
   color: blue;
 }
 .html-points{
-  background: linear-gradient(-45deg, #111010, #5b5c5c);
+  background: linear-gradient(-45deg, #b0d6f0, #171d1d);
   border-radius: 25px;
   font-size: 0.6em;
   margin-bottom: 5%;
@@ -895,9 +895,10 @@ footer img:hover{
   font-size: 2em;
 }
 /*//////////////// contact page styles  /////////////////////*/
-
-.form-container{
+.contact-container{
   background-color: rgb(17, 16, 16);
+  font-family: 'Courier New', Courier, monospace;
+  transition: 300ms ease-in-out;
 }
 
 .contact-header{
@@ -925,8 +926,50 @@ footer img:hover{
 }
 
 #submit{
-  width: 27%;
+  width: 34%;
   margin-left: 33%;
+  transition: 100ms ease-in-out;
+  cursor: pointer;
+}
+
+#submit:hover{
+  background-color: rgb(17, 16, 16);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+input{
+  border-radius: 25px;
+  padding: 1%;
+}
+
+.social-media{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5%;
+  padding-bottom: 5%;
+}
+
+
+.icons{
+  display: flex;
+  justify-content: space-around;
+}
+
+.icons i{
+  font-size: 2em;
+  
+}
+.social-link{
+  transition: 100ms;
+}
+.social-link:hover{
+  transform: scale(1.1);
+}
+
+.social-light-dark{
+  color: black;
 }
 
 /*========================MEDIA QUERY FOR TABLETS AND IPADS=============================================*/
@@ -1023,7 +1066,6 @@ footer img:hover{
 }
 
 .html-points{
-  background: linear-gradient(-45deg, #111010, #5b5c5c);
   border-radius: 25px;
   font-size: 0.8em;
   padding: 5%;
@@ -1111,7 +1153,7 @@ footer img{
 
 .summary{
   padding: 3%;
-  font-size: 0.5em;
+  font-size: 0.6em;
   margin-top: 0%;
 }
 
@@ -1187,6 +1229,15 @@ footer img{
 
 #submit{
   margin-left: 10%;
+}
+
+
+.icons{
+  padding-top: 5%;
+}
+
+.icons i{
+  font-size: 3em;
 }
 
 }
@@ -1341,8 +1392,6 @@ position: relative;
 }
 
 .html-points{
-  background: linear-gradient(-45deg, #111010, #5b5c5c);
-  border-radius: 25px;
    display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1437,7 +1486,7 @@ footer img{
 .summary{
   display: flex;
   height: fit-content;
-  font-size: 0.5em;
+  font-size: 0.8em;
   margin: 0;
   margin-left: 10%;
   padding: 3%;
@@ -1478,14 +1527,24 @@ footer img{
   font-size: 1em;
 }
 
-#subject{
-}
 
-#userEmail{
-}
 
 #submit{
   width: 27%;
+}
+
+.icons{
+  padding-top: 5%;
+  justify-content: center;
+}
+
+.social-link{
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.icons i{
+  font-size: 4em;
 }
 
 }
