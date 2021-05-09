@@ -1319,8 +1319,11 @@ footer img{
 
   /* HIDING THE SHOW NAV BUTTON AND DISPLAYING THE NAV FOR DESKTOP */
 
+  #show-nav{
+    display: none;
+  }
+
   .show-nav {
-    /* display: none; */
     top: 5%;
   }
 
