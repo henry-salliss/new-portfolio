@@ -33,23 +33,23 @@ document.addEventListener('keydown', function (e) {
 
 //////////////// creating the cookie element ///////////////////////
 
-const message = document.createElement('div');
-message.classList.add('cookie-message');
-message.innerHTML = `We use cookies for improved functionality and analytics. <button class = "btn btn--close--cookie">Got it!</button>`;
-header.append(message);
+// const message = document.createElement('div');
+// message.classList.add('cookie-message');
+// message.innerHTML = `We use cookies for improved functionality and analytics. <button class = "btn btn--close--cookie">Got it!</button>`;
+// header.append(message);
 
-const closeCookie = document.querySelector('.btn--close--cookie');
+// const closeCookie = document.querySelector('.btn--close--cookie');
 
-// remove the cookie message
-closeCookie.addEventListener('click', function () {
-  message.remove();
-});
+// // remove the cookie message
+// closeCookie.addEventListener('click', function () {
+//   message.remove();
+// });
 
-// Cookie styles
-message.style.backgroundColor = '#37383d';
-message.style.color = 'white';
-message.style.width = '120%';
-Number.parseFloat(getComputedStyle(message).height, 10) + 30 + 'px';
+// // Cookie styles
+// message.style.backgroundColor = '#37383d';
+// message.style.color = 'white';
+// message.style.width = '120%';
+// Number.parseFloat(getComputedStyle(message).height, 10) + 30 + 'px';
 
 // message.style.height = console.log(getComputedStyle(message).height); // shows current height
 

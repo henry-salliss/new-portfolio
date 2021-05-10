@@ -673,3 +673,27 @@ h4 {
   font-size: 1.5rem;
   font-weight: 400;
 }
+
+@media only screen and (max-width: 400px) {
+  .nav {
+    margin-left: -361px;
+  }
+
+  .nav__logo {
+    transform: scale(0.5);
+    margin-left: 76px;
+  }
+
+  .nav__link:link,
+  .nav__link:visited {
+    font-size: 0.9rem;
+  }
+
+  .header__img {
+    opacity: 0;
+  }
+
+  .header__title h1 {
+    font-size: 2.5rem;
+  }
+}
