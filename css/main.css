@@ -1454,12 +1454,12 @@ footer img{
 /******************* examples styles for desktop  ***************/
 
 .example-forwards{
-  padding: 5%;
-  font-size: 0.8em;
+  padding: 8%;
+  font-size: 0.7em;
 }
 
 .examples-header{
-  font-size: 2em;
+  font-size: 1.8em;
   padding-top: 3%;
   padding-bottom: 3%;
 }
@@ -1473,7 +1473,8 @@ footer img{
 /* reverse example styles for desktop */
 
 .example-reverse{
-  font-size: 0.8em;
+  padding: 8%;
+  font-size: 0.7em;
 }
 
 
