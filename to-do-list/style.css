@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(59, 59, 59);
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  margin-top: -11px;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+} */
+
+.list-container {
+  transition: 100ms;
+}
+.list {
+  padding: 0;
+}
+.btns {
+  margin-top: 5%;
+}
+.btn {
+  transition: 100ms;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  color: rgb(14, 13, 13);
+  font-weight: bold;
+}
+
+#submitBtn :hover {
+  color: rgb(107, 243, 191);
+  background-color: rgb(14, 13, 13);
+}
+.input {
+  border: 0;
+}
+
+.listBtns {
+  padding-left: 5%;
+}
+.list-item {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  animation: reveal 0.5s ease-in-out;
+  margin-bottom: 2%;
+  margin-left: 5%;
+  transition: 100ms;
+}
+
+.list-item p {
+  margin-top: 0;
+  color: black;
+}
+
+.delete,
+.done {
+  margin: 0;
+  margin-right: 10px;
+  width: 50px;
+}
+
+.completed-list {
+  padding: 0;
+}
+.complete {
+  background-color: rgb(89, 233, 89);
+  border: 1px solid black;
+}
+
+.complete p {
+  text-decoration: line-through;
+}
+
+/* paper design */
+#paper {
+  width: 600px;
+  height: 700px;
+  position: relative;
+  margin: 20px auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px #888;
+}
+
+/* styling red vertical line */
+#paper::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  background-color: rgba(255, 0, 0, 0.6);
+}
+
+/* styling blue horizontal lines */
+#pattern {
+  height: 100%;
+  background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px);
+}
+
+/* styling text content */
+#content {
+  padding-top: 6px;
+  padding-left: 56px;
+  padding-right: 16px;
+  line-height: 25px;
+  font-family: "Dancing Script", cursive;
+  font-size: 19px;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
