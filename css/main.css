@@ -300,10 +300,10 @@ nav {
 .landing-area {
   animation: slideTop ease-in-out 1s;
   color: #fff;
-  height: 45vh;
-  width: 90%;
+  /* height: 45vh; */
+  width: fit-content;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
   background-color: rgb(73, 73, 71, 0.2);
   padding: 2%;
   border-radius: 25px;
@@ -311,6 +311,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .switch-word::before {
@@ -995,15 +996,15 @@ input{
     justify-content: center;
   }
 
-  .landing-area {
-    padding: 2%;
+  /* .landing-area { */
+    /* padding: 2%;
     width: 80%;
-    font-size: 1em;
-  }
+    font-size: 1em; */
+  /* } */
   .navigation li {
     list-style: none;
     padding: 10%;
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     display: flex;
   }
 
