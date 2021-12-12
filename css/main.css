@@ -637,6 +637,10 @@ nav {
   box-shadow: 0 0 0;
 }
 
+.react-logo{
+  display: flex;
+}
+
 /************************ HTML project part styles  *******************/
 .html-header{
   font-size: 0.9em;
@@ -989,25 +993,27 @@ input{
 
 /*========================MEDIA QUERY FOR TABLETS AND IPADS=============================================*/
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 766px) {
   /* LANDING PAGE TABLET / IPAD STYLES */
 
   .body-particles{
     justify-content: center;
   }
 
-  /* .landing-area { */
-    /* padding: 2%;
-    width: 80%;
-    font-size: 1em; */
-  /* } */
+  .landing-area {
+    font-size: 0.6em;
+  }
+
   .navigation li {
     list-style: none;
     padding: 10%;
-    /* font-size: 1.5em; */
+    font-size: 1.5em;
     display: flex;
   }
 
+  .show-nav{
+    top: 10%
+  }
 
   /* main nav for ipads */
 
@@ -1381,6 +1387,10 @@ footer img{
 .lang-logo img:hover{
   transform: rotate(0);
   box-shadow: 0 0 0;
+}
+
+.react-logo{
+  top: 130%;
 }
 
 /************************ html css desc styles  ********************/

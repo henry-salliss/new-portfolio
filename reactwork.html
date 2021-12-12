@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Projects Page</title>
+    <title>React Work</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/normalize.css" />
@@ -39,80 +39,28 @@
         <div class="header-divider"></div>
         <nav class="main-nav">
           <ul>
-            <a href="contact.html"><li>contact</li></a>
+            <a href="projects.html"><li>projects</li></a>
             <a href="about.html"><li>about</li></a>
+            <a href="contact.html"><li>contact</li></a>
             <a><li id="toggle-mode">Light mode</li></a>
           </ul>
         </nav>
       </div>
     </header>
-    <main>
-      <section class="projects">
-        <div class="container">
-          <h1 class="main-header"><span>JavaScript</span> projects</h1>
-          <div class="description">
-            <ul class="desc-body">
-              <li class="points">
-                All these projects have been written in Javascript
-              </li>
-              <li class="points">
-                These projects showcase many different parts of JavaScript
-                spanning from simple DOM manipulation, to using all sorts of
-                different functions, arrays, methods and objects and APIs
-              </li>
-              <li class="points">Click on the image to see my work</li>
-            </ul>
+    <main class="example-container">
+      <h1 class="examples-header"><span style="color: rgb(77, 144, 221);">Food</span> app</h1>
+      <section class="example-forwards">
+          
+        <div class="project-link">
+            <a href="https://reactfoodorderapp.netlify.app"><img src="/img/reactmeals.jpg" alt="preview image of react food order app"></a>
           </div>
-          <div class="lang-logo">
-            <a href="jswork.html"
-              ><img src="img/js-logo-resized.jpg" alt="JavaScript logo"
-            /></a>
+          <div class="brief">
+              <p>This app made with React uses lots of different concepts from basic state management to React context, form validation, custom hooks and sending GET and POST requests.</p>
           </div>
-        </div>
-        <div class="container">
-          <h1 class="main-header"><span style="color:deepskyblue;">React</span> projects</h1>
-          <div class="description">
-            <ul class="desc-body">
-              <li class="points">
-                These projects were made using React and some of them with Redux
-              </li>
-              <li class="points">
-                These projects incorporate all the JavaScript knowledge I have learnt and have mixed it in with the React skills I am learning
-              </li>
-              <li class="points">Click on the image to see my work</li>
-            </ul>
-          </div>
-          <div class="lang-logo react-logo">
-            <a href="reactwork.html"
-              ><img src="img/reactlogo.jpg" alt="React logo"
-            /></a>
-          </div>
-        </div>
-        <section class="htmlproj">
-          <div class="container html-cont">
-            <h1 class="main-header html-header"><span>HTML & CSS</span> projects</h1>
-            <div class="html-desc">
-              <ul class="html-desc-body">
-                <li class="html-points">
-                  All these projects are basic HTML and CSS used to make responsive websites on all different devices
-                </li>
-                <li class="html-points">
-                  Mostly using Flexbox to position elements but also plan on expanding to CSS grid to help with layout of HTML elements
-                </li>
-                <li class="html-points">
-                  Click on the image to see my work
-                </li>
-              </ul>
-            </div>
-            <div class="lang-logo" id="css-logo">
-              <a href="htmlwork.html"
-                ><img src="img/cssimg.png" alt="CSS logo"
-              /></a>
-            </div>
-            </div>
-          </div>
-        </section>
-      
+              
+   
+      </section>
+        
     </main>
 
     
@@ -121,7 +69,7 @@
       <div class="footer-socials">
         <p>Socials</p>
       <p><a href="https://github.com/henry-salliss/" target="_blank" id="github"><img src="/img/github-square.svg" alt=""></a>
-        <p><a href="https://www.linkedin.com/in/henry-salliss-098b241a6/" target="_blank"><img src="/img/linkedin.svg" alt="linkedIn logo"></a></p>
+        <p><a href="https://www.linkedin.com/in/henry-salliss-098b241a6/"><img src="/img/linkedin.svg" alt="linkedIn logo"></a></p>
         </p>
       </div>
       <div class="copyright">
@@ -129,8 +77,9 @@
       </div>
       <div class="footer-nav">
         <ul>
-          <a href="contact.html"><li>contact</li></a>
+          <a href="projects.html"><li>projects</li></a>
             <a href="about.html"><li>about</li></a>
+            <a href="contact.html"><li>contact</li></a>
             <a><li id="toggle-footer-mode">Light mode</li></a>
         </ul>
       </div>
@@ -139,6 +88,7 @@
     <script src="particles.js"></script>
     <script src="app.js"></script>
     <script>
+        console.log(examplesForward);
       // configuring the toggle nav button
 
       toggleNav.addEventListener('click', function () {
@@ -156,10 +106,11 @@
       }
 
       const dayNightMode = function(){
-        container.classList.toggle('light-dark-mode')
-        htmlContainer.classList.toggle('light-dark-mode')
-        htmlContainer.style.color = 'white';
-        headingEls.classList.toggle('heading-light-dark')
+        // changing styles
+        exampleHeadings.classList.toggle('heading-light-dark')
+        exampleCont.classList.toggle('light-dark-mode')
+
+        // changing text on button
         if(lightDarkBtn.innerHTML === 'Light mode'){
           lightDarkBtn.innerHTML = 'Dark mode';
         }else{
